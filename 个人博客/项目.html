@@ -1,0 +1,259 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>我的项目经验</title>
+         
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<!--必要样式-->
+<link rel="stylesheet" type="text/css" href="css/component.css" />    
+
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+ 
+ 
+		<script src="booklet/new_file.js" type="text/javascript"></script>
+		<script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="booklet/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>
+
+		<link href="booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
+		 
+		 
+		 <style>
+         
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#eba426;	
+	color:#444;
+	font-size:12px;
+	color: #333;
+    font-family: 'Oswald', sans-serif;
+}
+ 
+ 
+.booklet           {
+	width:900px;
+	height:607px;
+	position:relative;
+	margin:0 auto 10px;
+	-moz-box-shadow:0px 0px 1px #fff;
+	-webkit-box-shadow:0px 0px 1px #fff;
+	box-shadow:0px 0px 1px #fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.booklet .b-wrap-left  {
+	background:#fff url(img/images/left_bg.jpg) no-repeat top left;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.booklet .b-wrap-right {
+	background:#efefef url(img/images/right_bg.jpg) no-repeat top left;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.booklet .b-counter {
+	bottom:10px;
+	position:absolute;
+	display:block;
+	width:90%;
+	height:20px;
+	border-top:1px solid #ddd;
+	color:#222;
+	text-align:center;
+	font-size:12px;
+	padding:5px 0 0;
+	background:transparent;
+	-moz-box-shadow:0px -1px 1px #fff;
+	-webkit-box-shadow:0px -1px 1px #fff;
+	box-shadow:0px -1px 1px #fff;
+	opacity:0.8;
+}
+.book_wrapper{
+	margin:0 auto;
+	padding-top:50px;
+	width:905px;
+	height:540px;
+	position:relative;
+	background:transparent url(img/images/bg.png) no-repeat 9px 27px;
+}
+.book_wrapper h1{
+	color:orange;
+	margin:5px 5px 5px 15px;
+	font-size:24px;
+	background:transparent url(img/images/h1.png) no-repeat bottom left;
+	padding-bottom:7px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.book_wrapper p{
+	font-size:15px;
+	margin:5px 5px 5px 15px;
+}
+.book_wrapper a.article,
+.book_wrapper a.demo{
+	background:transparent url(img/images/circle.png) no-repeat 50% 0px;
+	display:block;
+	width:95px;
+	height:41px;
+	text-decoration:none;
+	outline:none;
+	font-size:16px;
+	color:#555;
+	float:left;
+	line-height:41px;
+	padding-left:47px;
+}
+.book_wrapper a.demo{
+	margin-left:50px;
+}
+.book_wrapper a.article:hover,
+.book_wrapper a.demo:hover{
+	background-position:50% -41px;
+	color:#13386a;
+}
+.book_wrapper img{
+	margin:10px 0px 5px 35px;
+	width:300px;
+	padding:4px;
+	border:1px solid #ddd;
+	-moz-box-shadow:1px 1px 1px #fff;
+	-webkit-box-shadow:1px 1px 1px #fff;
+	box-shadow:1px 1px 1px #fff;
+}
+.booklet .b-wrap-right img{
+	border:1px solid #E6E3C2;
+}
+a#next_page_button,
+a#prev_page_button{
+	display:none;
+	position:absolute;
+	width:41px;
+	height:40px;
+	cursor:pointer;
+	margin-top:-20px;
+	top:50%;
+	background:transparent url(img/images/buttons.png) no-repeat 0px -40px;
+}
+a#prev_page_button{
+	left:-30px;
+}
+a#next_page_button{
+	right:-30px;
+	background-position:-41px -40px;
+}
+a#next_page_button:hover{
+	background-position:-41px 0px;
+}
+a#prev_page_button:hover{
+	background-position:0px 0px;
+}
+ 
+    
+    
+         </style>
+		 
+    </head>
+    <body>
+    <br><br><br><br><br>
+		 
+		<div class="book_wrapper">
+			<a id="next_page_button"></a>
+			<a id="prev_page_button"></a>
+			<a class="act-but22 submit" href="主界面.html"  style="color: ##FFFFFF">主界面</a>
+			<div id="mybook" style="display:none;">
+				<div class="b-load">
+					<div>
+						<img src="img/images/1.jpg" alt=""/>
+						<h1>第一次项目开发经历</h1>
+						<p>刚开始我认为编程只是像C/C++，配置好一个编译环境，然后通过IDE进行编译产生一个黑DOS窗口
+						后来慢慢接触到了UI界面设计，通过上网学习网络的在线课程，跟着老师的讲解制作出了属于自己的第一款小游戏。
+						慢慢的跟着老师开始跟进项目，学习到了很多关于项目开发的经验。</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div>
+					<div>
+						<img src="img/images/2.jpg" alt="" />
+						<h1>2019年参与校创重点项目：“趣学编程”</h1>
+						<p>2019年我们开始慢慢地接触到了算法和数据结构，由于数据结构代码实属磨练人的心智
+						于是我便在想为什么不能通过玩游戏的方式来学习算法呢？</p>
+						<p>随后便和自己志同相合的朋友一起利用Unity引擎开发出了一款面向少儿的编程类游戏
+						游戏中我将算法和游戏巧妙的结合在一起方便用户更能轻松的通过游戏的方式学习编程并且顺利结项</p>
+						<a href="" target="_blank" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div>
+					<div>
+						<img src="img/images/3.jpg" alt="" />
+						<h1>2020年主持校创重点项目”照片笔记”</h1>
+						<p>随着人工智能的发展，我也逐渐认识到如果想要开发一款智能的产品，似乎必须要通过AI技术，而
+						离我们最近的便是深度学习算法，众所周知，像我们平常使用的图片识别、图片分类、语音识别等等，
+						于是我就想着能不能将次技术运用到日常生活中，与我们联系最紧密的便是笔记，当我们通过拍照笔记识别出
+						其中的文字并且能对图片进行分类，不仅可以将用户的笔记进行备份，还更加方便用户对之前笔记进行查找和修改。</p>
+						<a href="" target="_blank" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div>
+					<div>
+						<img src="img/images/4.jpg" alt="" />
+						<h1>Have a good eye for discovery</h1>
+						<p>虽然自己现在已经大三了，参加的项目经验还是比较少的，但是我很清楚一个项目想要做好首先是创新点。
+						而国家一直在提倡创新，那么创新是什么？</p>
+						<p>我认为创新是实现自己的幻想，幻想实现出来便是现实，而没有在现实中出现的不就是创新吗，所以
+						在日常生活中我们要有一颗善于发现的眼睛，也祝愿自己以后研究生生涯中能够开发出让自己满意的一款产品</p>
+						<a href="" target="_blank" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <script type="text/javascript">
+			$(function() {
+				var $mybook 		= $('#mybook');
+				var $bttn_next		= $('#next_page_button');
+				var $bttn_prev		= $('#prev_page_button');
+				var $loading		= $('#loading');
+				var $mybook_images	= $mybook.find('img');
+				var cnt_images		= $mybook_images.length;
+				var loaded			= 0;
+				 
+				$mybook_images.each(function(){
+					var $img 	= $(this);
+					var source	= $img.attr('src');
+					$('<img/>').load(function(){
+						++loaded;
+						if(loaded == cnt_images){
+							$loading.hide();
+							$bttn_next.show();
+							$bttn_prev.show();
+							$mybook.show().booklet({
+								name:               null,                            //  
+								width:              800,                             //  
+								height:             500,                             //   
+								speed:              600,                             //  
+								direction:          'LTR',                           //  
+								                           //  
+								next:               $bttn_next,          			//  
+								prev:               $bttn_prev,          			//  
+								                       
+							});
+							Cufon.refresh();
+						}
+					}).attr('src',source);
+				});
+				
+			});
+        </script>
+ 
+    </body>
+ 
+</html>
